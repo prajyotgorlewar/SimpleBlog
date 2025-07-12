@@ -2,7 +2,7 @@ const { execSync } = require("child_process");
 const fs = require("fs");
 
 const dates = [
-  "2025-07-11"
+  "2025-11-07"
 ];
 
 const FILE_NAME = "activity.log";
