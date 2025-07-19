@@ -2,7 +2,7 @@ const { execSync } = require("child_process");
 const fs = require("fs");
 
 const dates = [
-  "2024-12-11"
+  "2024-11-16"
 ];
 
 const FILE_NAME = "activity.log";
@@ -18,6 +18,6 @@ dates.forEach((date, index) => {
   };
 
   execSync(`git add ${FILE_NAME}`, { stdio: "inherit" });
-  execSync(`git commit -m "commit"`, { stdio: "inherit", env });
+  execSync(`git commit -m "some commit"`, { stdio: "inherit", env });
   console.log(`✅ Committed for ${date}`);
 });
